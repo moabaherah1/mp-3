@@ -58,7 +58,7 @@ export default function Experience() {
             <title>Experience | Mohammed's Resume</title>
             <h3>Experience</h3>
 
-            <TopImage src="src/images/me.jpg" alt="Mohammed presenting his group's findings" />
+            <TopImage src="../../public/images/buedu.jpg" alt="Mohammed presenting his group's findings" />
 
             <Item>
                 <h4>

@@ -84,7 +84,7 @@ export default function Education() {
             <h3>Education</h3>
 
             <Intro>
-                <img src="src/images/buedu.jpg" alt="Boston University" />
+                <img src="../../public/images/buedu.jpg" alt="Boston University" />
                 <p>
                     To start my educational career, I went to Johnston Senior High School and finished
                     within the top 5 of my class. During senior year, I was accepted into Boston
