@@ -14,6 +14,7 @@ const NavWrapper = styled.nav`
 
     @media screen and (max-width: 1024px) {
         width: 100%;
+        overflow-x: auto;
     }
 `;
 
@@ -28,7 +29,9 @@ const NavList = styled.ul`
 
     @media screen and (max-width: 1024px) {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
     }
 `;
 
