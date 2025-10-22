@@ -3,7 +3,6 @@
 // October 20, 2025
 
 import { styled } from "styled-components";
-import { usePageTitle } from "../hooks/usePageTitle";
 
 const Table = styled.table`
     width: 50%;
@@ -31,9 +30,9 @@ const Table = styled.table`
 `;
 
 export default function References() {
-    usePageTitle("References");
     return (
         <>
+            <title>References | Mohammed's Resume</title>
             <h3>References</h3>
 
             <Table>

@@ -1,66 +1,27 @@
-// Mohammed Abaherah
 // App.tsx
-//October 20 2025
+import { createGlobalStyle } from "styled-components";
+import Div from "./components/div";
 
-import { Routes, Route } from "react-router-dom";
-import { Header } from "./components/Header";
-import { Nav } from "./components/Nav";
-import { Footer } from "./components/Footer";
-import Home from "./pages/Home";
-import Education from "./pages/Education";
-import Experience from "./pages/Experience";
-import Projects from "./pages/Projects";
-import References from "./pages/References";
-import About from "./pages/About";
-import { Calculator } from "./components/Calculator";
-import { styled } from "styled-components";
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lato:wght@400&display=swap');
 
-const PageWrapper = styled.div`
-    width: 80vw;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #889696;
+  * { margin: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: #D2D4C8;
+    font-size: calc(9px + 0.5vw);
+  }
+
+  h1, h2, h3, h4 { font-family: 'Cinzel', serif; }
+  h1 { font-size: calc(16px + 1vw); }
 `;
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-
-    @media screen and (max-width: 1024px) {
-        flex-direction: column;
-    }
-`;
-
-const Main = styled.main`
-    width: 70%;
-    padding: 8px;
-
-    @media screen and (max-width: 1024px) {
-        width: 100%;
-    }
-`;
-
-export function App() {
+export default function App() {
     return (
-        <PageWrapper>
-            <Header />
-            <Container>
-                <Nav />
-                <Main>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/education" element={<Education />} />
-                        <Route path="/experience" element={<Experience />} />
-                        <Route path="/projects" element={<Projects />} />
-                        <Route path="/references" element={<References />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/calculator" element={<Calculator />} />
-                    </Routes>
-                </Main>
-            </Container>
-            <Footer />
-        </PageWrapper>
+        <>
+            <GlobalStyle />
+            <Div />
+        </>
     );
 }
-

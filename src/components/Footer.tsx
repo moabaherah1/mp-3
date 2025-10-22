@@ -10,7 +10,7 @@ const FooterWrapper = styled.footer`
     padding: 10px;
 `;
 
-export function Footer() {
+export default function Footer() {
     return (
         <FooterWrapper>
             <p>All rights reserved: <a href="#">Credits</a> &#169;</p>

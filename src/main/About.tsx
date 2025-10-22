@@ -3,7 +3,6 @@
 // October 20, 2025
 
 import { styled } from "styled-components";
-import {usePageTitle} from "../hooks/usePageTitle.ts";
 
 const Intro = styled.div`
     margin-bottom: 15px;
@@ -15,9 +14,9 @@ const Intro = styled.div`
 `;
 
 export default function About() {
-    usePageTitle("About");
     return (
         <>
+            <title>About | Mohammed's Resume</title>
             <h3>About Me: Suguru Geto</h3>
             <Intro>
                 <p>

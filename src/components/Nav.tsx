@@ -1,15 +1,16 @@
 // Mohammed Abaherah
 // Nav.tsx
-// October 20, 2025
+// October 21, 2025
 
-import { styled } from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavWrapper = styled.nav`
     background-color: #E0E2DB;
     width: 30%;
     display: flex;
     justify-content: center;
+    padding-bottom: 60px;
 
     @media screen and (max-width: 1024px) {
         width: 100%;
@@ -27,8 +28,7 @@ const NavList = styled.ul`
 
     @media screen and (max-width: 1024px) {
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 `;
 
@@ -38,29 +38,34 @@ const NavItem = styled.li`
     padding: 2%;
     width: 80%;
     margin-top: 70px;
+    text-align: center;
+    background-color: #E0E2DB;
 
     @media screen and (max-width: 1024px) {
         width: auto;
-        margin: 5px;
+        margin-top: 15px;
+        border-radius: 25px;
+        padding: 10px 15px;
     }
 `;
 
-
-const NavLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-  &:visited { color: inherit; }    
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
 `;
-export function Nav() {
+
+export default function Nav() {
     return (
         <NavWrapper>
             <NavList>
-                <NavItem><NavLink to="/">Home</NavLink></NavItem>
-                <NavItem><NavLink to="/education">Education</NavLink></NavItem>
-                <NavItem><NavLink to="/experience">Experience</NavLink></NavItem>
-                <NavItem><NavLink to="/projects">Projects</NavLink></NavItem>
-                <NavItem><NavLink to="/references">References</NavLink></NavItem>
-                <NavItem><NavLink to="/about">About Me</NavLink></NavItem>
+                <NavItem><StyledLink to="/">Home</StyledLink></NavItem>
+                <NavItem><StyledLink to="/education">Education</StyledLink></NavItem>
+                <NavItem><StyledLink to="/experience">Experience</StyledLink></NavItem>
+                <NavItem><StyledLink to="/references">References</StyledLink></NavItem>
+                <NavItem><StyledLink to="/projects">Projects</StyledLink></NavItem>
+                <NavItem><StyledLink to="/about">About Me</StyledLink></NavItem>
             </NavList>
         </NavWrapper>
     );

@@ -1,23 +1,27 @@
 // Mohammed Abaherah
 // Header.tsx
-//October 20, 2025
-
-import { styled } from 'styled-components';
+// October 21, 2025
+import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
     background-color: #B8BDB5;
     text-align: left;
-    padding: 20px;
+    padding: 12px 16px 8px 16px;
 `;
 
-const H1 = styled.h1``;
-const P = styled.p``;
+const H1 = styled.h1`
+  margin: 0 0 6px 0;
+`;
 
-export function Header() {
+const Sub = styled.p`
+  margin: 0;
+`;
+
+export default function Header() {
     return (
         <HeaderWrapper>
             <H1>Mohammed's Resumé</H1>
-            <P>A website showcasing Mohammed's accomplishments</P>
+            <Sub>A website showcasing Mohammed's accomplishments</Sub>
         </HeaderWrapper>
     );
 }
