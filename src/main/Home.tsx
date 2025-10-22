@@ -54,7 +54,7 @@ export default function Home() {
             <h3>Home</h3>
 
             <Intro>
-                <img src="../../public/images/sugurugeto.jpg" alt="Mohammed (Suguru Geto)" />
+                <img src="/images/sugurugeto.jpg" alt="Mohammed (Suguru Geto)" />
                 <p>
                     Welcome to my resume webpage! I am Mohammed Abaherah, a Senior at
                     Boston University studying Computer Science. I like a multitude of
