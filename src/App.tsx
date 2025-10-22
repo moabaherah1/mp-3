@@ -1,4 +1,11 @@
 // App.tsx
+// I researched a bit and found createGlobalStyle - even tho not covered in class
+// explanation:
+// We use createGlobalStyle to define global CSS rules (like fonts, colors, and body styling)
+// that apply to the entire app, not just individual components.
+// This keeps our styling consistent across all pages and avoids having to repeat base styles
+// inside each styled component. This could be done by linking a css file as well- this just
+//uses styled-components in a neater way in my opinion
 import { createGlobalStyle } from "styled-components";
 import Div from "./components/div";
 
